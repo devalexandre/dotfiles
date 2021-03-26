@@ -28,11 +28,11 @@ bspc rule -a Alacritty state=floating rectangle=800x500+100+100
 bspc rule -a TelegramDesktop  state=floating 
 bspc rule -a Pcmanfm state=floating follow=on rectangle=740x485+20+50
 bspc rule -a code-oss  desktop='^3' state=floating follow=on rectangle=900x800+100+150
-
+bspc rule -a Plank layer=above manage=on border=off
 bspc rule -a Pavucontrol state=floating
 
 #polybar
-bash $HOME/.config/polybar/launch.sh &
+bash $HOME/.config/polybar/launch.sh --hack &
 #background
 feh --bg-scale ~/Pictures/adam-kool-ndN00KmbJ1c-unsplash.jpg &
 dunst -conf ~/.config/dunst/dunstrc &
